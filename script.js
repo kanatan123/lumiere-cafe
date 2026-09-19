@@ -87,3 +87,29 @@ sections.forEach((section) => {
     observer.observe(section);
 
 });
+
+// =========================
+// Contact Form
+// =========================
+
+const contactForm = document.getElementById("contactForm");
+const formSuccess = document.getElementById("formSuccess");
+const contactBack = document.querySelector(".contact-back");
+
+if (contactForm && formSuccess) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        contactForm.style.display = "none";
+        formSuccess.style.display = "block";
+
+        if (contactBack) {
+            contactBack.style.display = "none";
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

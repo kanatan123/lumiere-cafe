@@ -1333,3 +1333,199 @@ button {
     }
 
 }
+
+/* =========================
+   Contact Page
+========================= */
+
+.contact-form-section {
+    background: #f4f1e9;
+}
+
+.contact-form-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-form-heading h2 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 30px 0 15px;
+}
+
+.contact-form-heading > p:last-child {
+    font-size: 13px;
+    line-height: 2;
+}
+
+
+/* Form */
+
+.contact-form {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.required {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+
+    font-size: 10px;
+
+    color: #fff;
+    background: #8b7564;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* Input */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: 1px solid #d4cec2;
+
+    background: #fffdf9;
+
+    color: #302b27;
+
+    font-family: "Noto Serif JP", serif;
+    font-size: 14px;
+
+    border-radius: 0;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8b7564;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+
+/* Agreement */
+
+.form-agreement {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.form-agreement label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.form-agreement input {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* Submit */
+
+.form-submit {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-submit button {
+    cursor: pointer;
+}
+
+
+/* Back */
+
+.contact-back {
+    padding: 70px 20px 100px;
+    text-align: center;
+}
+
+
+/* =========================
+   Contact Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form-heading {
+        margin-bottom: 50px;
+    }
+
+    .form-group {
+        margin-bottom: 28px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px;
+        font-size: 13px;
+    }
+
+    .form-agreement {
+        text-align: left;
+    }
+
+}
+
+/* =========================
+   Form Success
+========================= */
+
+.form-success {
+    display: none;
+
+    max-width: 760px;
+    margin: 0 auto;
+
+    padding: 80px 30px;
+
+    text-align: center;
+    background: #eee9de;
+}
+
+.form-success h2 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    line-height: 1.7;
+
+    margin: 30px 0;
+}
+
+.form-success p:not(.section-label) {
+    font-size: 13px;
+    line-height: 2.3;
+    margin-bottom: 35px;
+}

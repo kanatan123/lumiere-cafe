@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Lumière Café & Bakery</title>
+
+    <meta
+        name="description"
+        content="Lumièreへのご予約・お問い合わせはこちらから。"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- =========================
+     Header
+========================= -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <span class="logo-main">Lumière</span>
+        <span class="logo-sub">CAFÉ & BAKERY</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="index.html#home">
+            Home
+            <span>ホーム</span>
+        </a>
+
+        <a href="index.html#about">
+            About
+            <span>店舗について</span>
+        </a>
+
+        <a href="index.html#menu">
+            Menu
+            <span>メニュー</span>
+        </a>
+
+        <a href="index.html#access">
+            Access
+            <span>アクセス</span>
+        </a>
+
+        <a href="contact.html">
+            Contact
+            <span>お問い合わせ</span>
+        </a>
+
+    </nav>
+
+    <a href="contact.html" class="reserve-button">
+        予約する
+    </a>
+
+    <button class="menu-button" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     Contact Hero
+========================= -->
+
+<section class="subpage-hero contact-hero">
+
+    <div class="subpage-hero-image">
+
+        <img
+            src="images/contact.jpg"
+            alt="Lumièreの店内"
+        >
+
+    </div>
+
+    <div class="subpage-hero-overlay"></div>
+
+    <div class="subpage-hero-content">
+
+        <p class="section-label">
+            Contact
+        </p>
+
+        <span class="section-label-jp">
+            お問い合わせ
+        </span>
+
+        <h1>
+            お気軽に、<br>
+            お問い合わせください。
+        </h1>
+
+        <p>
+            ご予約やご質問など、<br>
+            こちらのフォームから承ります。
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     Contact Form
+========================= -->
+
+<section class="contact-form-section section">
+
+    <div class="contact-form-heading">
+
+        <p class="section-label">
+            Contact Form
+        </p>
+
+        <span class="section-label-jp">
+            お問い合わせフォーム
+        </span>
+
+        <h2>
+            Lumièreへのお問い合わせ
+        </h2>
+
+        <p>
+            以下のフォームに必要事項をご入力ください。
+        </p>
+
+    </div>
+
+
+    <form class="contact-form" id="contactForm">
+
+        <!-- お名前 -->
+
+        <div class="form-group">
+
+            <label for="name">
+                お名前
+                <span class="required">必須</span>
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="例：山田 花子"
+                required
+            >
+
+        </div>
+
+
+        <!-- メールアドレス -->
+
+        <div class="form-group">
+
+            <label for="email">
+                メールアドレス
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="例：example@example.com"
+                required
+            >
+
+        </div>
+
+
+        <!-- 電話番号 -->
+
+        <div class="form-group">
+
+            <label for="tel">
+                お電話番号
+                <span class="required">必須</span>
+            </label>
+
+            <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="例：090-1234-5678"
+                required
+            >
+
+        </div>
+
+
+        <!-- 問い合わせ種類 -->
+
+        <div class="form-group">
+
+            <label for="category">
+                お問い合わせ内容
+                <span class="required">必須</span>
+            </label>
+
+            <select
+                id="category"
+                name="category"
+                required
+            >
+
+                <option value="">
+                    選択してください
+                </option>
+
+                <option value="reservation">
+                    ご予約について
+                </option>
+
+                <option value="menu">
+                    メニューについて
+                </option>
+
+                <option value="access">
+                    アクセスについて
+                </option>
+
+                <option value="other">
+                    その他
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- 詳細内容 -->
+
+        <div class="form-group">
+
+            <label for="message">
+                詳細内容
+                <span class="required">必須</span>
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="8"
+                placeholder="お問い合わせ内容をご入力ください。"
+                required
+            ></textarea>
+
+        </div>
+
+
+        <!-- 同意 -->
+
+        <div class="form-agreement">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    required
+                >
+
+                <span>
+                    個人情報の取り扱いについて同意する
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <!-- 送信 -->
+
+        <div class="form-submit">
+
+            <button
+                type="submit"
+                class="outline-button"
+            >
+                送信する
+                <span>→</span>
+            </button>
+
+        </div>
+
+        </form>
+
+        <div class="form-success" id="formSuccess">
+
+        <p class="section-label">
+            Thank You
+        </p>
+
+        <span class="section-label-jp">
+            送信完了
+        </span>
+
+        <h2>
+            お問い合わせを<br>
+            受け付けました。
+        </h2>
+
+        <p>
+            お問い合わせありがとうございます。<br>
+            内容を確認のうえ、担当者よりご連絡いたします。
+        </p>
+
+    <a href="index.html" class="text-button">
+        トップページへ戻る
+        <span>→</span>
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     Back
+========================= -->
+
+<section class="contact-back">
+
+    <a
+        href="index.html"
+        class="text-button"
+    >
+        トップページへ戻る
+        <span>→</span>
+    </a>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        <span>Lumière</span>
+        <small>CAFÉ & BAKERY</small>
+
+    </div>
+
+    <nav class="footer-nav">
+
+        <a href="index.html#home">
+            ホーム
+        </a>
+
+        <a href="index.html#about">
+            店舗について
+        </a>
+
+        <a href="index.html#menu">
+            メニュー
+        </a>
+
+        <a href="index.html#access">
+            アクセス
+        </a>
+
+        <a href="contact.html">
+            お問い合わせ
+        </a>
+
+    </nav>
+
+    <div class="footer-right">
+
+        <div class="sns">
+            <a href="#">◎</a>
+            <a href="#">𝕏</a>
+        </div>
+
+        <p>
+            © 2025 Lumière. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
