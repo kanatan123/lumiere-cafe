@@ -1529,3 +1529,116 @@ button {
     line-height: 2.3;
     margin-bottom: 35px;
 }
+/* =========================
+   Access
+========================= */
+
+.access-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    align-items: stretch;
+}
+
+/* Access */
+
+.access-content {
+    padding: 0;
+}
+
+.access-content h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 30px 0 20px;
+}
+
+.access-address,
+.access-info {
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+.access-info {
+    margin-top: 10px;
+}
+
+/* Contact */
+
+.access-contact {
+    padding: 0;
+}
+
+.access-contact h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 30px 0 20px;
+}
+
+.access-contact p:not(.section-label) {
+    font-size: 13px;
+    line-height: 2.2;
+    margin-bottom: 30px;
+}
+
+/* Google Map */
+
+.access-map {
+    margin-top: 35px;
+}
+
+.access-map iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.access-map iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .access-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .access-map {
+        grid-column: auto;
+    }
+
+    .access-map iframe {
+        height: 280px;
+    }
+
+}
+
+/* Access / Contact Card */
+
+.access-content,
+.access-contact {
+    background: #fffaf0;
+    padding: 45px 50px;
+    box-sizing: border-box;
+    border: 1px solid #e5ddce;
+}
+
+/* Access */
+
+.access-content {
+    margin-bottom: 0;
+}
+
+/* Contact */
+
+.access-contact {
+    margin-bottom: 0;
+}
